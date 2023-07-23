@@ -24,6 +24,7 @@ function App() {
           <Route path="/about" element={<About />} exact />
           <Route path="/books/:id" element = {<BookDetail/>} exact/>
         </Routes>
+  
       </main>
 
     </React.Fragment>
