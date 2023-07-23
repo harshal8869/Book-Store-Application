@@ -23,7 +23,8 @@ const getById = async (req, res, next) => {
     try {
         book = await Book.findById(id);
         
-    } catch (err) {
+    } 
+    catch (err) {
         console.log(err);
     }
 
@@ -48,7 +49,8 @@ const addBook = async (req, res, next) => {
             image
         });
         await book.save();
-    } catch (err) {
+    }
+    catch (err) {
         console.log(err);
     }
 
@@ -73,7 +75,8 @@ const updateBook = async (req, res, next) => {
             image
         });
         book = await book.save();
-    } catch (err) {
+    }
+    catch (err) {
         console.log(err);
     }
 
@@ -88,7 +91,8 @@ const deleteBook = async (req, res, next) => {
     let book;
     try {
         book = await Book.findByIdAndRemove(id);
-    } catch (err) {
+    } 
+    catch (err) {
         console.log(err);
     }
 
