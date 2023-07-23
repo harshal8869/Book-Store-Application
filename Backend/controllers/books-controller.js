@@ -10,7 +10,6 @@ const getAllBooks = async (req, res, next) => {
         console.log(err);
     }
 
-    
     if (!books) {
         return res.status(404).json({ message: "No products found" })
     }
